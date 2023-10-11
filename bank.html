@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bank Inside</title>
+</head>
+<body>
+
+
+    <header class="font-mono ">
+        <h1 class="text-4xl font-bold text-center py-2 ">Get some  <span class="text-green-600	"> Money..</span></h1>
+    </header>
+
+    <main class="font-mono">
+<div class="grid  grid-cols-3 gap-4 w-9/12 mx-auto  mt-10 ">
+    <div class="bg-amber-500 p-8 rounded-xl ">
+<h2 class="text-3xl text-white">Deposite</h2>
+<p class="text-5xl text-white " >$<span id="deposite-money">00</span></p>
+    </div>
+    
+    <div class="bg-green-500 p-8 rounded-xl ">
+        <h2 class="text-3xl text-white">Withdrow</h2>
+        <p class="text-5xl text-white">$<span id="withdrow-money">00</span></p>
+            </div>
+            <div class="bg-blue-500	p-8 rounded-xl ">
+                <h2 class="text-3xl text-white">Balence</h2>
+                <p class="text-5xl text-white">$<span id="Bal-money">1200</span></p>
+                    </div>
+   
+   
+</div>
+
+
+<div class="grid  grid-cols-2 gap-4 w-9/12 mx-auto  mt-10 ">
+<div class="bg-red-500 p-8 rounded-xl block">
+    <h2 class="text-3xl py-4 text-white">Add Some <span class="text-yellow-300 font-bold">Money</span></h2>
+
+    <div class="mx-auto">
+<input type="text"  name="" id="D-amaount" placeholder="$ entar amount" class="w-11/12 h-8 px-3 rounded-md">
+<button id="Dbtn" class="w-48 h-10 bg-gray-700  delay-200 hover:bg-sky-500 text-white rounded-xl	font-medium mt-3" >Deposite</button>
+
+</div>
+
+</div>
+<div class="bg-purple-500	 p-8 rounded-xl block">
+    <h2 class="text-3xl py-4 text-white">Withdrow</h2>
+
+    <div class="mx-auto">
+<input type="text" name="" id="W-amaunt" placeholder="$ entar amount" class="w-11/12 h-8 px-3 rounded-md ">
+<button id="Wbtn" class="w-48 h-10 bg-gray-700  delay-200 hover:bg-sky-500 text-white rounded-xl	font-medium mt-3" >Withdrow</button>
+
+</div>
+
+</div>
+
+</div>
+    </main>
+    <span id="balance" onm></span>
+
+    <script>
+    document.getElementById("balance").innerText = 1250;
+    </script>
+    
+ 
+<script src="deposite.js"></script>
+<script src="withdrow.js"></script>
+</body>
+</html>
