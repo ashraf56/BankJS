@@ -1,1 +1,1 @@
-# Banks ja with Javascript
+# Bankjs with Javascript
